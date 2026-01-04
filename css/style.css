@@ -771,27 +771,58 @@ section {
         transition: 0.3s;
         box-shadow: var(--shadow-md);
         padding: 2rem 0;
+        z-index: 999;
+        max-height: calc(100vh - 70px);
+        overflow-y: auto;
     }
 
     .nav-menu.active {
         left: 0;
     }
 
+    .logo img {
+        height: 60px;
+    }
+
+    .hero {
+        min-height: 80vh;
+        padding-top: 100px;
+    }
+
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        line-height: 1.2;
     }
 
     .hero-subtitle {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
     }
 
     .about-content,
     .contact-content {
         grid-template-columns: 1fr;
+        gap: 2rem;
     }
 
     .about-features {
         grid-template-columns: 1fr;
+    }
+
+    .about-text h3 {
+        font-size: 1.5rem;
     }
 
     .services-grid,
@@ -799,13 +830,30 @@ section {
         grid-template-columns: 1fr;
     }
 
+    .service-card {
+        padding: 1.5rem;
+    }
+
+    .portfolio-grid {
+        gap: 1.5rem;
+    }
+
+    .portfolio-item {
+        height: 250px;
+    }
+
     .why-grid {
         grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
     }
 
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 2rem;
     }
 
     .footer-social {
@@ -815,28 +863,108 @@ section {
     .social-links {
         justify-content: center;
     }
+
+    /* RTL Mobile Support */
+    body.rtl .nav-menu {
+        right: -100%;
+        left: auto;
+    }
+
+    body.rtl .nav-menu.active {
+        right: 0;
+        left: auto;
+    }
 }
 
 @media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .logo a {
+        padding: 6px 15px;
+    }
+
+    .hero {
+        min-height: 70vh;
+    }
+
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        line-height: 1.3;
     }
 
     .hero-subtitle {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
+    }
+
+    .section-description {
+        font-size: 1rem;
     }
 
     .hero-buttons {
         flex-direction: column;
         width: 100%;
+        gap: 0.75rem;
     }
 
     .btn {
         width: 100%;
+        padding: 12px 24px;
+        font-size: 0.95rem;
+    }
+
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    .service-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .portfolio-item {
+        height: 200px;
+    }
+
+    .info-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .why-number {
+        font-size: 2.5rem;
+    }
+
+    .why-card h3 {
+        font-size: 1.2rem;
+    }
+
+    /* Improved touch targets for mobile */
+    .nav-link {
+        padding: 12px 20px;
+        display: block;
+    }
+
+    .social-links a,
+    .footer-social a {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
     }
 }
 
@@ -852,4 +980,54 @@ section {
 
 .fade-in {
     animation: fadeIn 0.6s ease-in;
+}
+
+/* Performance Optimizations */
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Accessibility Improvements */
+.skip-to-content {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 8px;
+    text-decoration: none;
+    z-index: 10000;
+}
+
+.skip-to-content:focus {
+    top: 0;
+}
+
+/* Focus visibility for accessibility */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    .hamburger,
+    .hero-buttons,
+    .scroll-indicator,
+    .contact-form,
+    .back-to-top {
+        display: none;
+    }
 }
