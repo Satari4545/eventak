@@ -1,0 +1,43 @@
+AI IMAGE GENERATION PROMPTS FOR EVENTAK WEBSITE
+================================================
+
+Save these generated images in the "images" folder with the exact names shown below:
+
+1. hero-bg.jpg
+   Prompt: "Modern exhibition hall with elegant event booth displays, professional lighting, corporate trade show atmosphere, wide angle view, high-end commercial photography, vibrant colorful exhibition stands, people networking in background, professional conference setting, 8K resolution, photorealistic"
+
+2. about-image.jpg
+   Prompt: "Professional team installing modern exhibition booth, construction workers and designers collaborating, elegant trade show booth being built, modern materials and tools, professional commercial photography, bright lighting, clean corporate aesthetic, people working together, Riyadh Saudi Arabia style, 8K photorealistic"
+
+3. portfolio-1.jpg
+   Prompt: "Luxury product launch event booth, premium brand showcase display, modern minimalist design, elegant lighting, high-end exhibition stand, corporate branding elements, professional event photography, teal and coral color accents, sophisticated atmosphere, photorealistic 8K"
+
+4. portfolio-2.jpg
+   Prompt: "Interactive conference booth with technology displays, modern meeting space at trade show, professional networking area, sleek contemporary design, LED screens, comfortable seating, business people interacting, corporate event photography, high-quality commercial image"
+
+5. portfolio-3.jpg
+   Prompt: "Retail exhibition booth with product displays, engaging customer experience setup, modern commercial trade show stand, attractive merchandise presentation, professional retail environment, bright inviting lighting, shoppers browsing products, commercial photography 8K"
+
+6. portfolio-4.jpg
+   Prompt: "Large-scale industry exhibition display, impressive trade show booth setup, corporate mega booth, multiple levels and sections, professional lighting design, branded elements, busy trade show floor, aerial wide angle view, commercial event photography"
+
+ALTERNATIVE PROMPTS (if using different AI image generators):
+------------------------------------------------------------
+
+For DALL-E or Midjourney:
+- Add: "professional commercial photography, high resolution, no text, no watermarks"
+- Style: "photorealistic, corporate, professional, modern"
+- Aspect ratio: 16:9 or 4:3
+
+For Stable Diffusion:
+- Add: "(masterpiece, best quality, professional photography, 8k, highly detailed)"
+- Negative prompt: "text, watermark, logo, cartoon, illustration, low quality, blurry"
+
+IMPORTANT NOTES:
+---------------
+- All images should be 1920x1080px or higher
+- Save as JPG format
+- Optimize images for web (compress if over 500KB each)
+- Ensure no copyrighted brands or logos appear
+- Focus on generic, professional event/exhibition themes
+- Colors should complement: teal (#6dd5c3), coral (#f39c7e), dark blue (#1a1f3a)
